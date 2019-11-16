@@ -33,7 +33,9 @@ function check() {
         'fa-times': [],
         'fa-circle-o': []
     };
-    result.forEach((field, index) => moves[field] ? moves[field].push(index) : null);
+    result.forEach(function (field, index) {
+        if (moves[field]) moves[field].push(index)
+    });
     combinations.forEach(combination => {
         if (combination.every(index => moves[PLAYER1].indexOf(index) > -1)) {
             winner = 'Winner: Player 1';
