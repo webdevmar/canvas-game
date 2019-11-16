@@ -15,7 +15,7 @@
 This is Project 2 | CodersCamp: a simple canvas-game
 
 ## Screenshots
-![Example screenshot](images/tictactoe.jpg)
+![Example screenshot](https://github.com/webdevmar/canvas-game/blob/master/images/tictactoe.JPG)
 
 ## Technologies
 * html
@@ -31,7 +31,7 @@ Example of usage:
 boxes.forEach(box => box.addEventListener('click', pick));'
 
 ## Features
-List of features ready and TODOs for future development
+List of features ready and TODOs for future development:
 * basic functionality as a core and sense of the game
 * game with the mouse
 * simple design
