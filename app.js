@@ -1,5 +1,5 @@
-const PLAYER1 = 'fa-circle-o';
-const PLAYER2 = 'fa-times';
+const O = 'fa-circle-o';
+const X = 'fa-times';
 let round = 1;
 const board = [
     ['', '', ''],
@@ -17,7 +17,7 @@ boxes.forEach(box => box.addEventListener('click', pick));
 
 function pick(event) {
     const { row, column } = event.target.dataset;
-    const turn = round % 2 === 0 ? PLAYER2 : PLAYER1;
+    const turn = round % 2 === 0 ? X : O;
     if (board[row][column] !== '') return;
     event.target.classList.add(turn);
     board[row][column] = turn;
@@ -37,11 +37,11 @@ function check() {
         if (moves[field]) moves[field].push(index)
     });
     combinations.forEach(combination => {
-        if (combination.every(index => moves[PLAYER1].indexOf(index) > -1)) {
-            winner = 'Winner: Player 1';
+        if (combination.every(index => moves[O].indexOf(index) > -1)) {
+            winner = 'Winner: O';
         }
-        if (combination.every(index => moves[PLAYER2].indexOf(index) > -1)) {
-            winner = 'Winner: Player 2';
+        if (combination.every(index => moves[X].indexOf(index) > -1)) {
+            winner = 'Winner: X';
         }
     });
 
