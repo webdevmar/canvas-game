@@ -1,4 +1,6 @@
-body { font-family: sans-serif; }
+body { 
+    font-family: sans-serif; 
+}
 .board {
     width: 306px; background: grey;
     grid-template-columns: repeat(3, 1fr);
@@ -9,8 +11,12 @@ body { font-family: sans-serif; }
     cursor: pointer;
 }
 .box {
-    background: #fff; display: flex; justify-content: center; align-items: center;
-    font-size: 2rem; color: #222;
+    background: #fff; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-size: 2rem; 
+    color: #222;
 }
 .box:hover {
     background: #fafafa;
