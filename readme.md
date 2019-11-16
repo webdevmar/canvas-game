@@ -44,7 +44,7 @@ To-do list:
 * winner game information
 
 ## Status
-Project is finished in v 1.0 and might be continued with with some improvements for future development
+Project is finished in v 1.0 and might be continued with some improvements for future development
 
 ## Inspiration
 Project inspired on few different examples and solutions available on web in November, 2019
