@@ -18,7 +18,7 @@ boxes.forEach(box => box.addEventListener('click', pick));
 function pick(event) {
     const { row, column } = event.target.dataset;
     const turn = round % 2 === 0 ? X : O;
-    if (board[row][column] !== '') return;
+    if (board[row][column] === '')
     event.target.classList.add(turn);
     board[row][column] = turn;
     round++;
@@ -30,8 +30,8 @@ function check() {
     const result = board.reduce((total, row) => total.concat(row));
     let winner = null;
     let moves = {
-        'fa-times': [],
-        'fa-circle-o': []
+        X: [],
+        O: []
     };
     result.forEach(function (field, index) {
         if (moves[field]) moves[field].push(index)
