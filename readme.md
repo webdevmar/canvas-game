@@ -15,7 +15,7 @@
 This is Project 2 | CodersCamp: a simple canvas-game
 
 ## Screenshots
-![Example screenshot](./images/tictactoe.jpg)
+![Example screenshot](images/tictactoe.jpg)
 
 ## Technologies
 * html
@@ -27,8 +27,8 @@ To run this project, install it locally and open index.html in the browser, star
 
 ## Code Examples
 Example of usage:
-const boxes = [...document.querySelectorAll('.box')];
-boxes.forEach(box => box.addEventListener('click', pick));
+'const boxes = [...document.querySelectorAll('.box')];
+boxes.forEach(box => box.addEventListener('click', pick));'
 
 ## Features
 List of features ready and TODOs for future development
